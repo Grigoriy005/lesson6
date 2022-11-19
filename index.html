@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getResult(number1,number2,action) {
+            switch (action) {
+                case '+':
+                    return number1 + number2;
+                case '-':
+                    return number1 - number2;
+                case '*':
+                    return number1 * number2;
+                case '/':
+                   if (number2 != 0) {
+                    return number1 / number2;
+                   } else {
+                    return 'на ноль делить нельзя';
+                   }  
+            }
+        }
+       alert(getResult(456, 0, '/'));
+       
+       function isCharPreset(string,symbol,index) {
+            
+       }
+    </script>
+</body>
+</html>
